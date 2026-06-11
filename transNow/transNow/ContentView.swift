@@ -9,11 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 16) {
+            Image(systemName: "hand.wave.fill")
+                .font(.system(size: 56))
+                .foregroundStyle(.blue)
+
+            Text("Hello World")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+
+            Text("Welcome to transNow")
+                .font(.headline)
+                .foregroundStyle(.secondary)
         }
         .padding()
     }
